@@ -98,7 +98,7 @@ function Chatroom() {
       <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="say something nice" />
 
       <button type="submit" disabled={!formValue}>🕊️</button>
-
+      
     </form>
   </>
   )
@@ -114,7 +114,8 @@ function ChatMessage(props) {
 
   return (
     <div className={`message ${messageClass}`}>
-      <img src={photoURL} />
+      <img src={photoURL} alt="hai"/>
+
       <p>{text}</p>
     </div>
   )
